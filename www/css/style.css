@@ -1,0 +1,323 @@
+* {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+/* 
+body {
+    margin: 50;
+} */
+
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* padding-left: 100px; */
+    z-index: 1000;
+    background: #50e2f5;
+    display: flex;
+    align-items: center;
+    height: 6em;
+    justify-content: space-between;
+    /* padding-right: 100px; */
+    box-shadow: 0 .5rem 1rem rgb(255, 255, 255);
+}
+
+.header-logo {
+    display: flex;
+    justify-content: left;
+    /* width: 50%; */
+}
+
+.header-logo .logo {
+    width: 50px;
+    transform: translateX(100px);
+    height: 50px;
+}
+
+.header-logo .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar ul li {
+    list-style: none;
+    padding: 30px;
+}
+
+.navbar ul {
+    display: flex;
+    transform: translateX(-100px);
+    justify-content: space-between;
+}
+
+.margins  .boxs .title_text h1 {
+    font-size: 36px;
+}
+
+.margins  .boxs  .title_text {
+    margin-top: 10px;
+    text-align: center;
+    transform: translateX(110px);
+    margin-bottom: 30px;
+}
+
+
+.header .navbar a {
+    color: #0e0b0b;
+    /* margin-right: 10rem; */
+    font-size: 1.7rem;
+    text-transform: capitalize;
+}
+
+.header .navbar a:hover {
+    color: #f7f7f7;
+}
+
+section {
+    padding: 2rem 7%;
+}
+
+/* Background */
+.container {
+    display: flex;
+    padding: 2rem 7%;
+    justify-content: space-between;
+    background: #a1d6fa;
+}
+
+.container .posts-container .post {
+    width: 100%;
+    padding: 2rem;
+    background: #fff;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    border-radius: .5rem;
+    margin-bottom: 1.5rem;
+}
+
+.container .posts-container .post .image {
+    height: 40rem;
+    width: 100%;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+
+.container .posts-container .post .title {
+    padding-top: 1rem;
+    font-size: 2.5rem;
+    color: #000;
+}
+
+.inc {
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Ikon media sosial */
+.sticky-container {
+    padding: 0px;
+    margin: 0px;
+    position: fixed;
+    left: 25px;
+    top: 230px;
+    z-index: 1100;
+}
+
+
+.sticky li {
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border:3px solid white;
+    color: #efefef !important;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+.sticky li:hover {
+    border: 3px solid saddlebrown;
+}
+
+.sticky li:hover p a i {
+    color: saddlebrown !important;
+}
+
+.margins {
+    margin-top: 60px;
+}
+
+.sticky li p a {
+    text-decoration: none;
+    color: #2C3539;
+}
+
+.sticky li p a:hover {
+    text-decoration: underline;
+}
+
+.container .posts-container .post .text {
+    color: #777;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    padding: 1rem 0;
+}
+
+.container .sidebar .box {
+    border: .1rem solid rgba(67, 70, 245, 0.2);
+    border-radius: .5rem;
+    overflow: hidden;
+    background: #fff;
+    margin-bottom: 1.5rem;
+    margin-left: 50px;
+}
+
+.container .sidebar .box .title {
+    padding: 1.5rem;
+    font-size: 2rem;
+    color: #ecedee;
+    background: #000000;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+/* Box about me */
+.container .sidebar .box .about {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+#about {
+    margin-top:85px;
+}
+
+
+.container .sidebar .box .about img {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+/* Nama di About me */
+.container .sidebar .box .about h3 {
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+}
+
+/*  di About me */
+.container .sidebar .box .about p {
+    color: #050404;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding: 0.5rem;
+}
+
+.container .sidebar .box .about .follow {
+    padding: 1rem 0;
+}
+
+.container .sidebar .box .about .follow a {
+    height: 4rem;
+    line-height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background: #333;
+    color: #fff;
+    font-size: 1.7rem;
+    margin: 0 .1rem;
+}
+
+.container .sidebar .box .about .follow a:hover {
+    background: rgb(114, 173, 250);
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.footer .credit {
+    text-transform: capitalize;
+    font-size: 2rem;
+    color: #333;
+    padding: 1rem 0;
+}
+
+.footer .credit span {
+    color: rgb(8, 5, 5);
+}
+
+@media (max-width:1000px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 1.5rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    .container {
+        padding: 2rem;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    .container .posts-container .post .image {
+        height: 30rem;
+        ;
+    }
+
+    .container {
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .footer {
+        flex-flow: column;
+        text-align: center;
+    }
+
+}
+
+@media (max-width:476px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    .header {
+        flex-flow: column;
+    }
+
+    .header .logo {
+        margin: auto;
+    }
+
+}
